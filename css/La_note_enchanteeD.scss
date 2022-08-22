@@ -1,0 +1,150 @@
+header{
+    padding:1%;
+}
+
+.bloc-header{
+    width:20%;
+    img{
+        width:100%;
+        margin-top:0;
+    }
+}
+
+.fa-arrow-left{
+    font-size:2vw;
+    top:0.7vw;
+    right:35vw;
+}
+
+.image{
+    height:40vw;
+    position:relative;
+    overflow:hidden;
+    img{
+        position:absolute;
+        transform: translateY(-40%);
+    }
+}
+
+.menu{
+    border-radius:5vw 5vw 0 0;
+}
+
+.titre-menu{
+    padding:2vw 30vw;
+    justify-content: space-around;
+    h2{
+        font-size:3vw;
+    }
+    i{
+        font-size:3vw;
+        top:0.5vw;
+        left:0;
+    }
+}
+
+.titre-plats{
+    font-size:1.5vw;
+    margin-bottom:0.7vw;
+    padding-left:1.5vw;
+}
+
+.souligner{
+    width:3.7vw;
+    border-top:solid 0.3vw #99E2D0;
+    margin-left:1.5vw
+}
+
+.box-plats{
+    display:flex;
+    justify-content:space-around;
+}
+
+.box-plat{
+    margin-top:2vw;
+    margin-bottom:0;
+}
+
+.cartes-menu{
+    font-size:1.1vw;
+    width:30vw;
+    line-height:2.5vw;
+    border-radius:1.8vw;
+    &:hover{
+        .coche{
+            margin-left:1vw;
+            width:8vw;
+        }
+        .prix{
+            margin-left:1vw;
+        }
+    }
+}
+
+.plats-carte{
+    p{
+        margin-left:1.5vw;
+        margin-bottom:1vw;
+    }
+    h3{
+        margin-top:1vw;
+        margin-left:1.5vw;
+    }
+}
+
+.prix{
+    top:3.5vw;
+}
+
+.coche{
+    border-top-right-radius:2vw;
+    border-bottom-right-radius: 2vw;
+    i{
+        font-size:2vw;
+    }
+}
+
+@keyframes cocher{
+    from{
+        transform:translateX(100%);
+        margin-left:0;
+    }
+    to{
+        transform:translateX(0%);
+        margin-left:2vw;
+    }
+}
+
+.commander{
+    margin:0;
+    width:15%;
+    padding:1.5vw 0;
+    box-shadow:0 0.5vw 1vw rgb(180,180,180);
+    position:relative;
+    top:6vw;
+    &:hover{
+        box-shadow:0 0.5vw 1vw rgb(120,120,120);
+    }
+    p{
+        font-size:1.3vw;
+    }
+}
+
+footer{
+    font-size:1.5vw;
+    line-height:2vw;
+    padding:2% 0;
+    margin-top:2vw;
+    li:nth-child(1){
+        font-size:2vw;
+        padding-bottom:2vw;
+    }
+    ul{
+        padding-bottom:0;
+    }
+    i{
+        font-size:1vw;
+        width:2vw;
+        bottom:0.1vw;
+    }
+}

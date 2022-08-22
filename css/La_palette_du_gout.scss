@@ -1,0 +1,282 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    background-color:rgb(240,240,240);
+}
+
+#bloc-page{
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:center;
+    padding:3%;
+    background-color:white;
+}
+
+.bloc-header{
+    width:60%;
+    img{
+        width:100%;
+        margin-top:3%;
+        position:relative;
+        right:2vw;
+    }
+}
+
+.fa-arrow-left{
+    font-size:5.5vw;
+    position:relative;
+    top:3.5vw;
+    right:16vw;
+    height:10%;
+}
+
+.image img{
+    width:100%;
+}
+
+.menu{
+    background-color:rgb(240,240,240);
+    border-radius:10vw 10vw 0 0;
+    position:relative;
+    bottom:10vw;
+    h2, h3, p{
+        margin:0;
+    }
+}
+
+.titre-menu{
+    display:flex;
+    padding:7vw 5vw;
+    justify-content:space-between;
+    h2{
+        font-family:'Shrikhand', sans-serif;
+        font-size:7vw;
+    }
+    i{
+        font-size:7vw;
+        position:relative;
+        top:1vw;
+        left:-3vw;
+    }
+}
+
+.titre-plats{
+    font-size:4vw;
+    padding:0 5vw;
+    margin-bottom:1vw;
+}
+
+.souligner{
+    width:10vw;
+    margin-left:5vw;
+    border-top: solid 1vw #99E2D0;
+}
+
+.box-plat{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:3.5vw;
+    margin-bottom:11vw;
+    margin-top:3.5vw;
+}
+
+.entrees{
+    opacity:0;
+    animation-name: apparition;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-delay:0ms;
+}
+
+.plats{
+    opacity:0;
+    animation-name: apparition;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-delay:300ms;
+}
+
+.desserts{
+    opacity:0;
+    animation-name: apparition;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-delay:600ms;
+}
+
+@keyframes apparition{
+    0%{
+        margin-top:1%;
+    }
+    80%,100%{
+        opacity:1;
+    }
+    100%{
+        margin-top:0%;
+    }
+}
+
+.cartes-menu{
+    width:93%;
+    background-color:white;
+    border-radius:4vw;
+    box-shadow:0 1vw 1.5vw rgb(200,200,200);
+    line-height:6vw;
+    font-size:3.5vw;
+    overflow:hidden;
+    display:flex;
+    h3{
+        overflow:hidden;
+        text-overflow:ellipsis;
+        margin-top:2vw;
+        margin-left:2.5vw;
+    }
+    &:hover{
+        cursor:pointer;
+        .coche{
+            animation-name:cocher;
+            animation-duration:0.5s;
+            animation-fill-mode: forwards;
+            position:relative;
+            left:0.1vw;
+            width:20vw;
+            i{
+                animation:rotate 0.5s ease-in-out;
+            }
+        }
+        .prix{
+            animation-name:cocher;
+            animation-duration:0.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+.plats-carte{
+    overflow:hidden;
+    white-space:nowrap;
+    width:100%;
+    height:auto;
+    text-overflow:ellipsis;
+    p{
+        overflow:hidden;
+        text-overflow:ellipsis;
+        margin-bottom:2vw;
+        margin-left:2.5vw;
+    }
+}
+
+@keyframes cocher{
+    from{
+        transform:translateX(100%);
+        margin-left:0;
+    }
+    to{
+        transform:translateX(0%);
+        margin-left:5vw;
+    }
+}
+
+.coche{
+    font-weight:bold;
+    transform:translateX(101%);
+    overflow:hidden;
+    background-color:#99E2D0;
+    border-top-right-radius:4vw;
+    border-bottom-right-radius:4vw;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    i{
+        font-size:5vw;
+        color:white;
+        position:relative;
+        right:0.1vw;
+    }
+}
+
+.prix{
+    position:relative;
+    top:8vw;
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.bouton-commander{
+    display:flex;
+    justify-content:center;
+}
+
+.commander{
+    margin-bottom:5%;
+    padding:4% 0;
+    width:50%;
+    background: linear-gradient(-7deg, #9356DC, 30%, #FF79DA);
+    border-radius:10vw;
+    box-shadow:0 1.5vw 2vw rgb(180,180,180);
+    &:hover{
+        filter:brightness(1.05);
+        box-shadow:0 1.5vw 2vw rgb(120,120,120);
+    }
+    p{
+        font-size:4vw;
+        color:white;
+        font-weight:bold;
+        margin:0;
+        text-align:center;
+    }
+}
+
+footer{
+    background-color:rgb(80,80,80);
+    color:white;
+    font-size:4vw;
+    line-height:6.5vw;
+    padding:7% 0;
+    li:nth-child(1){
+        margin:0;
+        color:white;
+        font-family: 'Shrikhand', sans-serif;
+        padding-bottom:3vw;
+        font-size:4.5vw;
+    }
+    ul{
+        margin:0;
+        padding-left:5%;
+        padding-bottom:2%;
+    }
+    i{
+        font-size:2.8vw;
+        position:relative;
+        bottom:0.4vw;
+        width:6vw;
+    }
+    a{
+        color:white;
+    }
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+li{
+    list-style-type:none;
+}

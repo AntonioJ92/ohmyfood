@@ -1,0 +1,177 @@
+header img {
+  width: 20%;
+  margin-top: 0;
+}
+
+.localisation i {
+  font-size: 1.5vw;
+  right: 0;
+  bottom: 0.1vw;
+}
+.localisation p {
+  font-size: 1.5vw;
+  margin: 1vw;
+}
+
+.recherche {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.recherche h2 {
+  font-size: 2vw;
+  padding: 1vw;
+}
+
+.decouvrez {
+  font-size: 2vw;
+  padding-bottom: 2vw;
+}
+
+.explorer {
+  margin: 0;
+  width: 20%;
+  padding: 1vw 0;
+  box-shadow: 0 0.5vw 1vw rgb(180, 180, 180);
+}
+.explorer:hover {
+  box-shadow: 0 0.5vw 1vw rgb(120, 120, 120);
+}
+.explorer p {
+  font-size: 1.3vw;
+}
+
+.fonctionnement {
+  padding-right: 0;
+  margin: 0;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 5vw;
+}
+.fonctionnement h2 {
+  margin: 0;
+  margin-left: 4vw;
+  padding: 2vw 0;
+  font-size: 2vw;
+}
+
+.box-carte-fonctionnement {
+  flex-direction: row;
+  gap: unset;
+}
+
+.carte-fonctionnement {
+  border-radius: 2vw;
+  width: 30%;
+  box-shadow: 0 0.5vw 1vw rgb(180, 180, 180);
+}
+.carte-fonctionnement:hover {
+  box-shadow: 0 0.5vw 1vw rgb(120, 120, 120);
+}
+.carte-fonctionnement i {
+  font-size: 1.7vw;
+}
+
+.numero-fonctionnement {
+  font-size: 1.7vw;
+  right: 1vw;
+  height: 2vw;
+  width: 2vw;
+}
+
+.icone-fonctionnement {
+  padding: 0 1vw;
+  width: 0;
+}
+
+.texte-fonctionnement {
+  font-size: 1.7vw;
+  margin: 8% 1vw;
+}
+
+.restaurants {
+  padding: 0;
+  margin: 0 4vw;
+  border-radius: 2vw;
+  padding-bottom: 0.1vw;
+  margin-top: 2vw;
+}
+.restaurants h2 {
+  font-size: 2vw;
+  padding: 2vw 0;
+  margin: 0 4vw;
+}
+
+.box-cartes {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3vw;
+  padding-left: 4vw;
+}
+
+.cartes {
+  width: 20%;
+  border-radius: 2vw;
+  box-shadow: 0 0.5vw 1vw rgb(180, 180, 180);
+}
+
+.img-carte {
+  height: 10vw;
+}
+
+.nouveau {
+  right: 1vw;
+  top: 1vw;
+}
+.nouveau p {
+  font-size: 0.8vw;
+  margin: 0.5vw 0.7vw;
+}
+
+.sous-carte h3, .sous-carte p {
+  font-size: 1vw;
+}
+
+.titre-carte {
+  margin: 0.5vw 1vw;
+  line-height: 1.5vw;
+}
+
+.coeur-plein {
+  bottom: -5vw;
+  left: -5.42vw;
+  font-size: 1.3vw;
+}
+
+.fa-regular {
+  bottom: -5vw;
+  left: -3.5vw;
+  font-size: 1.3vw;
+}
+
+footer {
+  font-size: 1.5vw;
+  line-height: 2vw;
+  padding: 2% 0;
+  margin-top: 2vw;
+}
+footer li:nth-child(1) {
+  font-size: 2vw;
+  padding-bottom: 2vw;
+}
+footer ul {
+  padding-bottom: 0;
+}
+footer i {
+  font-size: 1vw;
+  width: 2vw;
+  bottom: 0.1vw;
+}
+
+.preloader h1 {
+  font-size: 7vw;
+}
+
+.loader {
+  width: 45vw;
+  height: 45vw;
+}/*# sourceMappingURL=AccueilD.css.map */

@@ -1,0 +1,64 @@
+.restaurants {
+  padding: 0;
+  padding-bottom: 0.1vw;
+  margin-top: 2vw;
+}
+.restaurants h2 {
+  padding: 2vw 0;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-bottom: 5vw;
+  padding-top: 15vw;
+}
+
+.box-cartes {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10vw;
+  padding-right: 0vw;
+}
+
+.cartes {
+  width: 40%;
+  border-radius: 3vw;
+  box-shadow: 0 1vw 1.5vw rgb(180, 180, 180);
+  margin-bottom: 5vw;
+}
+
+.gauche {
+  margin-left: 4.5vw;
+}
+
+.img-carte {
+  height: 22vw;
+}
+
+.nouveau {
+  right: 2vw;
+  top: 2vw;
+}
+.nouveau p {
+  font-size: 1.5vw;
+  margin: 0.7vw 1vw;
+}
+
+.sous-carte h3, .sous-carte p {
+  font-size: 2vw;
+}
+
+.titre-carte {
+  margin: 1vw 1.5vw;
+  line-height: 3vw;
+}
+
+.coeur-plein {
+  bottom: -8.5vw;
+  left: -7.45vw;
+  font-size: 2.5vw;
+}
+
+.fa-regular {
+  bottom: -8.5vw;
+  left: -5vw;
+  font-size: 2.5vw;
+}/*# sourceMappingURL=AccueilT.css.map */
