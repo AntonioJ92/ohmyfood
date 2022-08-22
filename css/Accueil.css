@@ -354,7 +354,7 @@ header img {
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 }
-.coeur-plein:active {
+.coeur-plein:active { 
   -webkit-animation-name: coeur;
           animation-name: coeur;
   -webkit-animation-duration: 0.5s;

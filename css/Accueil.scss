@@ -323,7 +323,7 @@ header{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    &:active{ 
+    &:active{
         animation-name:coeur;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
