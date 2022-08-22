@@ -1,3 +1,7 @@
+$green: #99E2D0;
+$pink: #FF79DA;
+$purple: #9356DC;
+
 *{
     box-sizing:border-box;
 }
@@ -83,7 +87,7 @@ header{
 .souligner{
     width:10vw;
     margin-left:5vw;
-    border-top: solid 1vw #99E2D0;
+    border-top: solid 1vw $green;
 }
 
 .box-plat{
@@ -197,7 +201,7 @@ header{
     font-weight:bold;
     transform:translateX(101%);
     overflow:hidden;
-    background-color:#99E2D0;
+    background-color:$green;
     border-top-right-radius:4vw;
     border-bottom-right-radius:4vw;
     justify-content:center;
@@ -234,7 +238,7 @@ header{
     margin-bottom:5%;
     padding:4% 0;
     width:50%;
-    background: linear-gradient(-7deg, #9356DC, 30%, #FF79DA);
+    background: linear-gradient(-7deg, $purple, 30%, $pink);
     border-radius:10vw;
     box-shadow:0 1.5vw 2vw rgb(180,180,180);
     &:hover{
