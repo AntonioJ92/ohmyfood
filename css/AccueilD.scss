@@ -143,6 +143,14 @@ header img{
     bottom:-5vw;
     left:-5.42vw;
     font-size:1.3vw;
+    &:active{
+        animation:none;
+    }
+    &:hover{
+        animation-name:coeur;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
 }
 
 .fa-regular{
