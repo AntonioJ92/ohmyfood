@@ -141,18 +141,6 @@ header img {
   left: -5.42vw;
   font-size: 1.3vw;
 }
-.coeur-plein:active {
-  -webkit-animation: none;
-          animation: none;
-}
-.coeur-plein:hover {
-  -webkit-animation-name: coeur;
-          animation-name: coeur;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
 
 .fa-regular {
   bottom: -5vw;
