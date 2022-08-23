@@ -141,10 +141,6 @@ header img {
   left: -5.42vw;
   font-size: 1.3vw;
 }
-.coeur-plein:active {
-  -webkit-animation: none;
-          animation: none;
-}
 .coeur-plein:hover {
   -webkit-animation-name: coeur;
           animation-name: coeur;
