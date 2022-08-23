@@ -65,11 +65,10 @@ body{
         border-bottom:none;
     }
     100%{
-        transform:translateY(-100%);
+        transform:translateY(-200%);
         border-bottom:5px solid black;
     }
 }
-
 
 @keyframes loader{
     0%{
