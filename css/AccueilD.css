@@ -137,23 +137,18 @@ header img {
 }
 
 .coeur-plein {
-  bottom: -5vw;
-  left: -5.42vw;
   font-size: 1.3vw;
-}
-.coeur-plein:hover {
-  -webkit-animation-name: coeur;
-          animation-name: coeur;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .fa-regular {
-  bottom: -5vw;
-  left: -3.5vw;
   font-size: 1.3vw;
+}
+
+.box-coeur {
+  bottom: -5vw;
+  left: -4.5vw;
+  height: 1.3vw;
+  width: 1.3vw;
 }
 
 footer {

@@ -318,34 +318,11 @@ header img {
   line-height: 6vw;
 }
 
-@-webkit-keyframes coeur {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes coeur {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 .coeur-plein {
-  position: relative;
-  bottom: 17.1vw;
-  left: 38vw;
-  font-size: 5.1vw;
+  position: absolute;
+  font-size: 5vw;
   color: transparent;
-  opacity: 0;
+  opacity: 1;
   overflow: hidden;
   background: linear-gradient(210deg, #9356DC, 50%, #FF79DA);
   -webkit-background-clip: text;
@@ -353,21 +330,25 @@ header img {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-}
-.coeur-plein:hover {
-  -webkit-animation-name: coeur;
-          animation-name: coeur;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 
 .fa-regular {
+  position: absolute;
+  font-size: 5vw;
+}
+
+.box-coeur {
+  width: 5vw;
+  height: 5vw;
   position: relative;
   bottom: 12vw;
-  left: 38vw;
-  font-size: 5vw;
+  left: 37vw;
+}
+.box-coeur:hover .coeur-plein {
+  transform: scale(1);
 }
 
 footer {

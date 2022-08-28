@@ -295,45 +295,37 @@ header{
     line-height:6vw;
 }
 
-@keyframes coeur{
-    0%{
-        transform: scale(0);
-        opacity:1;
-    }
-    100%{
-        transform: scale(1);
-        opacity:1;
-    }
-}
-
-.coeur-plein{
-    position:relative;
-    bottom:17.1vw;
-    left:38vw;
-    font-size:5.1vw;
-    color:transparent;
-    opacity:0;
+.coeur-plein {
+    position: absolute;
+    font-size: 5vw;
+    color: transparent;
+    opacity: 1;
     overflow: hidden;
-    background: -moz-linear-gradient(210deg, $purple, 50%, $pink);
-    background: -webkit-linear-gradient(210deg, $purple, 50%, $pink);
-    background: linear-gradient(210deg, $purple, 50%, $pink);
+    background:linear-gradient(210deg, #9356DC, 50%, #FF79DA);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    &:hover{ 
-        animation-name:coeur;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-    }
+    transform:scale(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
 }
 
-.fa-regular{
+.fa-regular {
+    position: absolute;
+    font-size: 5vw;
+}
+
+.box-coeur{
+    width:5vw;
+    height:5vw;
     position:relative;
     bottom:12vw;
-    left:38vw;
-    font-size:5vw;
+    left:37vw;
+    &:hover .coeur-plein{
+        transform: scale(1);
+    }
 }
 
 footer{
