@@ -29,11 +29,7 @@ body{
     flex-direction: column;
     animation: loading-spinner 3s forwards;
     h1{
-        background: -moz-linear-gradient(210deg, $purple, 50%, $pink);
-        background: -webkit-linear-gradient(210deg, $purple, 50%, $pink);
         background: linear-gradient(210deg, $purple, 50%, $pink);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
         font-size:10vw;
@@ -302,8 +298,6 @@ header{
     opacity: 1;
     overflow: hidden;
     background:linear-gradient(210deg, #9356DC, 50%, #FF79DA);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;

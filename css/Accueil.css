@@ -29,8 +29,7 @@ body {
 .preloader h1 {
   background: linear-gradient(210deg, #9356DC, 50%, #FF79DA);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 10vw;
   font-family: "Shrikhand", sans-serif;
@@ -326,8 +325,7 @@ header img {
   overflow: hidden;
   background: linear-gradient(210deg, #9356DC, 50%, #FF79DA);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   transform: scale(0);
